@@ -142,8 +142,8 @@ def main():
             break
         if not text:
             continue
-        lexer = Lexer(text)
         interpreter = Interpreter(lexer)
+        lexer = Lexer(text)
         result = interpreter.expr()
         print(result)
 
